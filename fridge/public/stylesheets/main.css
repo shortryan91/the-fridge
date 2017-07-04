@@ -1,0 +1,33 @@
+
+h1 {
+  text-align: center;
+  color: rgb(218, 214, 214);
+  font-family: 'Architects Daughter', cursive;
+  font-size: 70px;
+  text-decoration: underline;
+  background-color: black;
+  margin-top: auto;
+  z-index:10;
+}
+
+ul {
+  font-size: 50px;
+  font-family: 'Architects Daughter', cursive;
+
+
+}
+
+#checkbox {
+  height: 34px;
+  width: 40px;
+  margin-left: 30px;
+}
+
+button {
+  height: 80px;
+  width: 135px;
+}
+
+body {
+  background-color: mistyrose;
+}

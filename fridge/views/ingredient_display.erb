@@ -1,3 +1,21 @@
 <h1>in the kitchen</h1>
 
 <a href="/ingredients/new"><button>add_ingredient</button></a>
+<% if logged_in? %>
+  <h2>Welcome <%= current_user.email %></h2>
+<% end %>
+<ul>
+
+  <% @food.each do |ingredient| %>
+  <li><%= ingredient['name']%><input id="checkbox" type="checkbox" name="service" value="<% ingredient['name']%>">
+
+  <form action="/ingredients/<%= ingredient['id'] %>"    method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button>Delete</button>
+  </form>
+  </li>
+  <% end %>
+
+</ul>
+
+<a href="/"><button>BACK</button></a>
