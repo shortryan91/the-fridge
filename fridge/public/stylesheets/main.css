@@ -31,3 +31,9 @@ button {
 body {
   background-color: mistyrose;
 }
+
+input {
+  font-size: 40px;
+  height: 50px;
+  width: 300px;
+}

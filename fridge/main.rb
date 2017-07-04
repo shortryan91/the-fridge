@@ -38,6 +38,11 @@ post '/sessions' do
    end
 end
 
+delete '/session' do
+  session[:user_id] = nil
+  redirect '/sign_in'
+end
+
 
 
 
@@ -63,4 +68,8 @@ delete '/ingredients/:id' do
   ingredients.destroy
 
   redirect '/ingredients'
+end
+
+get '/ingredients/results' do
+  erb :recipe_results
 end

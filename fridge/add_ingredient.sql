@@ -8,3 +8,10 @@ CREATE TABLE users(
   email VARCHAR (500),
   password_digest TEXT
 );
+
+CREATE TABLE recipes(
+  id SERIAL4 PRIMARY KEY,
+  name VARCHAR (400),
+  link TEXT,
+  elements TEXT
+);
