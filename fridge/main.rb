@@ -6,6 +6,7 @@ require 'pry'
 require_relative 'db_config'
 require_relative 'models/ingredient'
 require_relative 'models/user'
+require_relative 'models/recipe'
 
 
 enable :sessions
@@ -70,6 +71,8 @@ delete '/ingredients/:id' do
   redirect '/ingredients'
 end
 
-get '/ingredients/results' do
+get '/results' do
+  binding.pry
+  @recipes = Recipe.where("ingredient @> ARRAY[?]::text[]",[params:ingredients])
   erb :recipe_results
 end

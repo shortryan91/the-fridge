@@ -2,3 +2,7 @@
 
 
 <a href="/ingredients"><button>Back</button></a>
+
+<% @recipes.each do |result|%>
+  <li><%= result['name']%></li>
+<% end %>

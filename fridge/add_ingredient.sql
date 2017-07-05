@@ -13,5 +13,7 @@ CREATE TABLE recipes(
   id SERIAL4 PRIMARY KEY,
   name VARCHAR (400),
   link TEXT,
-  elements TEXT
+  ingredient TEXT[]
 );
+
+ 
