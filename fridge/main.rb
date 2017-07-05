@@ -72,7 +72,7 @@ delete '/ingredients/:id' do
 end
 
 get '/results' do
-  binding.pry
-  @recipes = Recipe.where("ingredient @> ARRAY[?]::text[]",[params:ingredients])
+
+  @recipes = Recipe.where("ingredient @> ARRAY[?]::text[]",params[:ingredients])
   erb :recipe_results
 end
