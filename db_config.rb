@@ -1,7 +1,8 @@
 require 'active_record'
+
 options = {
-  adapter:'postgresql',
-  database:'add_ingredient'
+  adapter: 'postgresql',
+  database: 'add_ingredient'
 }
 
 ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || options)

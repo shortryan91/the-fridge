@@ -1,7 +1,7 @@
 
 require 'sinatra'
-# require 'sinatra/reloader'
-# require 'pry'
+require 'sinatra/reloader'
+require 'pry'
 
 require_relative 'db_config'
 require_relative 'models/ingredient'
@@ -47,10 +47,13 @@ end
 
 get '/sign_up' do
   erb :sign_up
+
 end
 
 post '/signup' do
-  user = User.new(email: params[:email], password: params[:password])
+  user = User.new
+  user.email = params[:email]
+  user.password = params[:password]
   user.save
   redirect '/ingredients'
 end
