@@ -45,12 +45,20 @@ post '/sign_in' do
   redirect '/ingredients'
 end
 
+get '/sign_up' do
+  erb :sign_up
+end
+
+post '/signup' do
+  user = User.new(email: params[:email], password: params[:password])
+  user.save
+  redirect '/ingredients'
+end
+
 delete '/session' do
   session[:user_id] = nil
   redirect '/sign_in'
 end
-
-
 
 
 get '/ingredients' do
