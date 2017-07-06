@@ -1,6 +1,6 @@
 
 
-# Dinner finding appp
+# Dinner finding app
 
 this is a app that will help you find what to make with what you have in your fridge and pantry
 
@@ -39,25 +39,25 @@ Explain what these tests test and why
 
 ## Deployment
 
-this is app has been deployed on heroku 
+this is app has been deployed on heroku
 
 
 ## Built With
 
 html
 css
-ruby 
+ruby
 prosgres
 
 
 ## Contributing
 
-please message me if you are interested in contributing and happy to take any suggestions to improve 
+please message me if you are interested in contributing and happy to take any suggestions to improve
 
 
 ## Authors
 
-the sole author is Ryan Short 
+the sole author is Ryan Short
 
 
 
@@ -66,6 +66,3 @@ the sole author is Ryan Short
 * dt (lead teacher)
 * kasun (teacher assistant)
 * google helpful as always thanks
-
-
-
