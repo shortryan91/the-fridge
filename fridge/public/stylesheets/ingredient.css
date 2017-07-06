@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(222,185,170);
+  margin: 0 auto;
+  height: 960px;
+}
+h1 {
+  background-color: rgb(35,25,25);
+  font-size: 65px;
+  font-family: 'Architects Daughter',cursive;
+  margin: 0;
+  text-align: center;
+  color: rgb(181, 181, 181);
+}
+
+button {
+  font-size: 30px;
+}
+
+div {
+  border: 2px solid black;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSutkaE5EIBTksJJDknFLdGwzPRBpHVgIPW4l0OBqVHhFjQJ-Jk');
+  margin: 40px 60px;
+}
+li {
+
+  font-size: 30px;
+  font-family: 'Archiects Daughter',cursive;
+  font-weight: bold;
+}
+
+#checkbox {
+  height: 20px;
+  width: 20px;
+  padding-left: 40px;
+  background-color: black;
+
+}

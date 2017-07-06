@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(222,185,170);
+  margin: 0 auto;
+  height: 960px;
+}
+h1 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 50px;
+  margin-left: 40px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+fieldset {
+  margin-left: 40px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+label {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 36px;
+}
+input{
+  margin: 15px;
+  font-size: 24px;
+}
+
+button {
+  display: inline-block;
+  background-color: black;
+  border-top: black;
+  color: white;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}

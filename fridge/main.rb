@@ -39,6 +39,12 @@ post '/sessions' do
    end
 end
 
+post '/sign_in' do
+  user = User.new(name: params[:name], email: params[:email], password: params[:password])
+  user.save
+  redirect '/ingredients'
+end
+
 delete '/session' do
   session[:user_id] = nil
   redirect '/sign_in'
