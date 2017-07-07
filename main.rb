@@ -1,6 +1,6 @@
 
 require 'sinatra'
-# require 'sinatra/reloader'
+require 'sinatra/reloader'
 # require 'pry'
 
 require_relative 'db_config'
@@ -92,4 +92,8 @@ get '/results' do
 
   @recipes = Recipe.where("ingredient @> ARRAY[?]::text[]",params[:ingredients])
   erb :recipe_results
+end
+
+get '/contact' do
+  erb :contact
 end
